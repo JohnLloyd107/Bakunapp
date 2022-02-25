@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/medlogo2"
+    >
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Allergy List"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#009688"
+        android:textColor="@color/white"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="130dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:background="@drawable/stroke_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="130dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/aname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Allergy Name"
+                android:textSize="25dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:text="Sample 1"
+                android:checked="false"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/list2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:text="Sample 2"
+                android:checked="false"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/list3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:text="Sample 3"
+                android:checked="false"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/list4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:text="Sample 4"
+                android:checked="false"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="Other:"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="Type here if you have multiple allergy:"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:textSize="13dp"
+                />
+
+            <EditText
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/otherlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type Here"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/listbtn"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_res"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

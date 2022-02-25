@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "211921881813",
+    "project_id": "bakunapp",
+    "storage_bucket": "bakunapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211921881813:android:4f17c6a05bf5027ec5305c",
+        "android_client_info": {
+          "package_name": "com.group2.bakunapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211921881813-nlbq4eoijevrhnrfausl1p7j2nra172i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApP5zwd8FUPq_8b-zxehro7hh-U_CCScs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211921881813-nlbq4eoijevrhnrfausl1p7j2nra172i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

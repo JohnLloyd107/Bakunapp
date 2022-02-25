@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#a6ecff"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Name: "
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textappointments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textusername"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Appointment "
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textappr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textappointments"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Approve "
+            android:textColor="#0055ff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/btnview"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textappr"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttoncolor"
+            android:text="View"
+            android:textColor="#004970"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

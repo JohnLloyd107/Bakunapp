@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg7"
+
+    tools:context=".Update">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="330dp"
+        android:layout_height="530dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/update_line"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <Button
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/button"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:background="@drawable/btn_res"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/textView8"
+        android:layout_width="330dp"
+        android:layout_height="63dp"
+        android:background="@drawable/radius"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="234dp"
+        android:layout_height="61dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/place"
+        android:layout_width="234dp"
+        android:layout_height="38dp"
+        android:text="Location"
+        android:textColor="#000000"
+        android:textSize="20dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/appointtext"
+        app:layout_constraintStart_toStartOf="@+id/appointtext"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/textView12"
+        android:layout_width="234dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:text="No Location Yet"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APPROVED"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/dose1"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:text="1st Dose:"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/dose1up"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/appointtext"
+        app:layout_constraintTop_toBottomOf="@+id/appointtext"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/dose1up"
+        android:layout_width="152dp"
+        android:layout_height="23dp"
+        android:text="N/A"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/appointtext"
+        app:layout_constraintTop_toBottomOf="@+id/appointtext"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/dose2"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:text="2nd Dose:"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/dose2up"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dose1"
+        app:layout_constraintTop_toBottomOf="@+id/dose1"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/dose2up"
+        android:layout_width="152dp"
+        android:layout_height="23dp"
+        android:text="N/A"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/dose1up"
+        app:layout_constraintTop_toBottomOf="@+id/dose1up"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/booster"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:text="Booster:"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/boosterup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dose2"
+        app:layout_constraintTop_toBottomOf="@+id/dose2"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/boosterup"
+        android:layout_width="152dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:text="N/A"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/dose2up"
+        app:layout_constraintTop_toBottomOf="@+id/dose2up"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/appointtext"
+        android:layout_width="234dp"
+        android:layout_height="25dp"
+        android:text="Appointment"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/typetext"
+        android:layout_width="234dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="124dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Vaccine Type"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/boosterup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/booster"
+        app:layout_constraintTop_toBottomOf="@+id/boosterup" />
+
+    <TextView
+        android:id="@+id/typevalue"
+        android:layout_width="234dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="No Vaccine Yet"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/typetext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/typetext"
+        app:layout_constraintTop_toBottomOf="@+id/typetext" />
+
+    <Button
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteY="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
